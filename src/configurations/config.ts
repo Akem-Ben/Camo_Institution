@@ -7,9 +7,9 @@ const stage: any = process.env.NODE_ENV;
 let config
 
 if(stage === "development"){
-    config = require("./development").default
+    config = require("./dev").default
 }else if(stage === "production"){
-    config = require("./production").default
+    config = require("./prod").default
 }
 
 
